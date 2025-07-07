@@ -1,0 +1,97 @@
+.virtual-keyboard {
+  padding: 50px 0;
+}
+.app-keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.app-keyboard__title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: clamp(25px, 12vw, 50px);
+  color: var(--accent-color);
+  text-shadow: var(--text-shadow);
+  text-align: center;
+}
+.display-keyboard {
+  width: 100%;
+  min-height: 80px;
+  font-size: 24px;
+  color: var(--keyboard-text);
+  background-color: var(--bg-dispay-keyboard);
+  box-shadow: var(--display-shadow);
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+  padding: 15px;
+  overflow-wrap: break-word;
+}
+.btns-keyboard {
+  width: 100%;
+  min-height: 40px;
+  background-color: var(--bg-btn-keyboard);
+  box-shadow: var(--keyboard-shadow);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 15px;
+}
+.btns-keyboard__flex-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.btns-keyboard__main {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.btns-keyboard__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(12px, 5vw, 20px);
+  color: var(--btn-keyboard-color);
+  width: clamp(30px, 15vw, 80px);
+  height: clamp(30px, 15vw, 80px);
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  box-shadow: var(--btn-shadow);
+  transition: box-shadow 0.3s ease;
+  transition: transform 0.2s ease;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--hover-btn);
+    }
+  }
+  &:active {
+    transform: translateY(-2px);
+    box-shadow: var(--hover-btn);
+  }
+}
+.btns-keyboard__minor {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.btns-keyboard__btn--shift,
+.btns-keyboard__btn--backspace,
+.btns-keyboard__btn--clear {
+  width: clamp(50px, 40vw, 16%);
+  height: auto;
+  padding: clamp(5px, 40vw, 15px);
+}
+.btns-keyboard__btn--active {
+  box-shadow: var(--active-btn);
+}
+.btns-keyboard__btn--spase {
+  width: clamp(50px, 40vw, 48%);
+  height: auto;
+  padding: clamp(5px, 40vw, 15px);
+}

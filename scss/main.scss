@@ -1,0 +1,111 @@
+@import './blocks/./_index.scss';
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  // *base styles
+  --main-font: 'Inter', sans-serif;
+  --width-container: 1170px;
+  --padding-container: 15px;
+
+  // *main colors
+  --page-bg-color: #0d0d0d;
+  --main-color: #ffffff;
+  --accent-color: #8000ff;
+  --border-color: #333333;
+  --section-btn-bg-color: #1d1c1c;
+
+  // *state
+  --ui-element-default-color: #2c2d2d;
+  --btn-keyboard-color: #ffffff;
+  --hover-btn: 0 7px 0 #483d8b;
+  --active-btn: 0 12px 0 #483d8b;
+
+  // *navbar
+  --default-bg-navbar: rgba(22, 22, 22, 0);
+  --active-bg-navbar: rgba(22, 22, 22, 1);
+  --button-theme-color: #2c2d2d;
+
+  // *app keyboard
+  --text-shadow: 4px 14px 90px rgb(128, 0, 255, 1);
+  --display-shadow: 0 7px 0 #483d8b;
+  --bg-dispay-keyboard: #9e01ff;
+  --display-shadow: 0 7px 0 #483d8b;
+  --bg-btn-keyboard: #c58aff;
+  --keyboard-shadow: 4px 14px 90px rgb(128, 0, 255, 1);
+  --btn-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  --keyboard-text: #ffffff;
+
+  // *footer
+  --bg-footer: #161616;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--main-font);
+  font-weight: 400;
+  color: var(--main-color);
+  background-color: var(--page-bg-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+.container {
+  max-width: calc(var(--width-container) + var(--padding-container) * 2);
+  margin: 0 auto;
+  padding-inline: var(--padding-container);
+}
+
+// *media
+
+@media (max-width: 1131px) {
+  // *app keyboard
+  .btns-keyboard__flex-row .btns-keyboard__btn {
+    width: 47%;
+  }
+  .btns-keyboard__minor {
+    order: -1;
+  }
+}
+@media (max-width: 1025px) {
+  // *app keyboard
+  .btns-keyboard__btn--shift,
+  .btns-keyboard__btn--backspace,
+  .btns-keyboard__btn--clear,
+  .btns-keyboard__btn--spase {
+    width: 48%;
+  }
+}

@@ -1,0 +1,20 @@
+.footer {
+  width: 100%;
+  min-height: 62px;
+  background-color: var(--bg-footer);
+  margin-top: 14px;
+}
+.copywriting {
+  min-height: 62px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.copywriting__text {
+  font-size: 12px;
+}
+.copywriting__text-span {
+  text-transform: uppercase;
+}

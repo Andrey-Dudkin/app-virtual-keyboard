@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Виртуальная клавиатура</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="container">
+          <div class="navbar__content">
+            <a href="#" class="logo-link">
+              <span class="logo-link__span">&lt;ad&gt;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="virtual-keyboard">
+        <div class="container">
+          <div class="app-keyboard">
+            <h1 class="app-keyboard__title">Виртуальная клавиатура</h1>
+            <div class="display-keyboard"></div>
+            <div class="btns-keyboard">
+              <div class="btns-keyboard__main">
+                <div class="btns-keyboard__flex-row">
+                  <button
+                    type="button"
+                    value="1"
+                    class="btns-keyboard__btn btns-keyboard__btn--main btns-keyboard__btn--special-characters-one">
+                    1 !
+                  </button>
+                  <button type="button" value="2" class="btns-keyboard__btn btns-keyboard__btn--main btns-keyboard__btn--special-characters-two">2 @</button>
+                  <button type="button" value="3" class="btns-keyboard__btn btns-keyboard__btn--main btns-keyboard__btn--special-characters-three">3 #</button>
+                  <button type="button" value="4" class="btns-keyboard__btn btns-keyboard__btn--main btns-keyboard__btn--special-characters-four">4 $</button>
+                  <button type="button" value="5" class="btns-keyboard__btn btns-keyboard__btn--main btns-keyboard__btn--special-characters-five">5 %</button>
+                  <button type="button" value="6" class="btns-keyboard__btn btns-keyboard__btn--main">6</button>
+                  <button type="button" value="7" class="btns-keyboard__btn btns-keyboard__btn--main">7</button>
+                  <button type="button" value="8" class="btns-keyboard__btn btns-keyboard__btn--main">8</button>
+                  <button type="button" value="9" class="btns-keyboard__btn btns-keyboard__btn--main">9</button>
+                  <button type="button" value="0" class="btns-keyboard__btn btns-keyboard__btn--main">0</button>
+                  <button type="button" value="-" class="btns-keyboard__btn btns-keyboard__btn--main">-</button>
+                  <button type="button" value="_" class="btns-keyboard__btn btns-keyboard__btn--main">_</button>
+                </div>
+                <div class="btns-keyboard__flex-row">
+                  <button type="button" value="й" class="btns-keyboard__btn btns-keyboard__btn--main">й</button>
+                  <button type="button" value="ц" class="btns-keyboard__btn btns-keyboard__btn--main">ц</button>
+                  <button type="button" value="у" class="btns-keyboard__btn btns-keyboard__btn--main">у</button>
+                  <button type="button" value="к" class="btns-keyboard__btn btns-keyboard__btn--main">к</button>
+                  <button type="button" value="е" class="btns-keyboard__btn btns-keyboard__btn--main">е</button>
+                  <button type="button" value="н" class="btns-keyboard__btn btns-keyboard__btn--main">н</button>
+                  <button type="button" value="г" class="btns-keyboard__btn btns-keyboard__btn--main">г</button>
+                  <button type="button" value="ш" class="btns-keyboard__btn btns-keyboard__btn--main">ш</button>
+                  <button type="button" value="щ" class="btns-keyboard__btn btns-keyboard__btn--main">щ</button>
+                  <button type="button" value="з" class="btns-keyboard__btn btns-keyboard__btn--main">з</button>
+                  <button type="button" value="х" class="btns-keyboard__btn btns-keyboard__btn--main">х</button>
+                  <button type="button" value="ъ" class="btns-keyboard__btn btns-keyboard__btn--main">ъ</button>
+                </div>
+                <div class="btns-keyboard__flex-row">
+                  <button type="button" value="ф" class="btns-keyboard__btn btns-keyboard__btn--main">ф</button>
+                  <button type="button" value="ы" class="btns-keyboard__btn btns-keyboard__btn--main">ы</button>
+                  <button type="button" value="в" class="btns-keyboard__btn btns-keyboard__btn--main">в</button>
+                  <button type="button" value="а" class="btns-keyboard__btn btns-keyboard__btn--main">а</button>
+                  <button type="button" value="п" class="btns-keyboard__btn btns-keyboard__btn--main">п</button>
+                  <button type="button" value="р" class="btns-keyboard__btn btns-keyboard__btn--main">р</button>
+                  <button type="button" value="о" class="btns-keyboard__btn btns-keyboard__btn--main">о</button>
+                  <button type="button" value="л" class="btns-keyboard__btn btns-keyboard__btn--main">л</button>
+                  <button type="button" value="д" class="btns-keyboard__btn btns-keyboard__btn--main">д</button>
+                  <button type="button" value="ж" class="btns-keyboard__btn btns-keyboard__btn--main">ж</button>
+                  <button type="button" value="э" class="btns-keyboard__btn btns-keyboard__btn--main">э</button>
+                  <button type="button" value="ё" class="btns-keyboard__btn btns-keyboard__btn--main">ё</button>
+                </div>
+                <div class="btns-keyboard__flex-row">
+                  <button type="button" value="я" class="btns-keyboard__btn btns-keyboard__btn--main">я</button>
+                  <button type="button" value="ч" class="btns-keyboard__btn btns-keyboard__btn--main">ч</button>
+                  <button type="button" value="с" class="btns-keyboard__btn btns-keyboard__btn--main">с</button>
+                  <button type="button" value="м" class="btns-keyboard__btn btns-keyboard__btn--main">м</button>
+                  <button type="button" value="и" class="btns-keyboard__btn btns-keyboard__btn--main">и</button>
+                  <button type="button" value="т" class="btns-keyboard__btn btns-keyboard__btn--main">т</button>
+                  <button type="button" value="ь" class="btns-keyboard__btn btns-keyboard__btn--main">ь</button>
+                  <button type="button" value="б" class="btns-keyboard__btn btns-keyboard__btn--main">б</button>
+                  <button type="button" value="ю" class="btns-keyboard__btn btns-keyboard__btn--main">ю</button>
+                  <button type="button" value="," class="btns-keyboard__btn btns-keyboard__btn--main">,</button>
+                  <button type="button" value="." class="btns-keyboard__btn btns-keyboard__btn--main">.</button>
+                  <button type="button" value="?" class="btns-keyboard__btn btns-keyboard__btn--main">?</button>
+                </div>
+              </div>
+              <div class="btns-keyboard__minor">
+                <button type="button" class="btns-keyboard__btn btns-keyboard__btn--shift">Shift</button>
+                <button type="button" value=" " class="btns-keyboard__btn btns-keyboard__btn--spase">Space</button>
+                <button type="button" class="btns-keyboard__btn btns-keyboard__btn--backspace">Backspace</button>
+                <button type="button" class="btns-keyboard__btn btns-keyboard__btn--clear">Clear</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="copywriting">
+            <p class="copywriting__text">© Андрей Дудкин</p>
+            <p class="copywriting__text">
+              <span class="copywriting__text-span">Html</span>
+              верстальщик, создание сайтов
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

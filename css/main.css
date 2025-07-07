@@ -1,0 +1,300 @@
+.header {
+  margin-bottom: 24px;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 48px;
+  background-color: var(--default-bg-navbar);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+.navbar--fixed {
+  background-color: var(--active-bg-navbar);
+  box-shadow: var(--navbar-shadow);
+}
+
+.navbar__content {
+  min-height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  outline: none;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--main-color);
+  letter-spacing: -0.6px;
+}
+
+.theme-btn {
+  position: relative;
+  width: 48px;
+  height: 28px;
+  background-color: var(--ui-element-default-color);
+  border-radius: 20px;
+}
+.theme-btn:focus {
+  border: solid 1px var(--main-color);
+}
+
+.theme-btn__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.2s left ease;
+}
+
+.theme-btn__icon {
+  width: 22px;
+  height: 22px;
+  fill: var(--theme-icon);
+  transition: all 0.2s ease;
+}
+
+.hidden {
+  position: absolute;
+  transform: scale(0);
+}
+
+.virtual-keyboard {
+  padding: 50px 0;
+}
+
+.app-keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.app-keyboard__title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: clamp(25px, 12vw, 50px);
+  color: var(--accent-color);
+  text-shadow: var(--text-shadow);
+  text-align: center;
+}
+
+.display-keyboard {
+  width: 100%;
+  min-height: 80px;
+  font-size: 24px;
+  color: var(--keyboard-text);
+  background-color: var(--bg-dispay-keyboard);
+  box-shadow: var(--display-shadow);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border-radius: 10px;
+  padding: 15px;
+  overflow-wrap: break-word;
+}
+
+.btns-keyboard {
+  width: 100%;
+  min-height: 40px;
+  background-color: var(--bg-btn-keyboard);
+  box-shadow: var(--keyboard-shadow);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 15px;
+}
+
+.btns-keyboard__flex-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btns-keyboard__main {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.btns-keyboard__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(12px, 5vw, 20px);
+  color: var(--btn-keyboard-color);
+  width: clamp(30px, 15vw, 80px);
+  height: clamp(30px, 15vw, 80px);
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  box-shadow: var(--btn-shadow);
+  transition: box-shadow 0.3s ease;
+  transition: transform 0.2s ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .btns-keyboard__btn:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-btn);
+  }
+}
+.btns-keyboard__btn:active {
+  transform: translateY(-2px);
+  box-shadow: var(--hover-btn);
+}
+
+.btns-keyboard__minor {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btns-keyboard__btn--shift,
+.btns-keyboard__btn--backspace,
+.btns-keyboard__btn--clear {
+  width: clamp(50px, 40vw, 16%);
+  height: auto;
+  padding: clamp(5px, 40vw, 15px);
+}
+
+.btns-keyboard__btn--active {
+  box-shadow: var(--active-btn);
+}
+
+.btns-keyboard__btn--spase {
+  width: clamp(50px, 40vw, 48%);
+  height: auto;
+  padding: clamp(5px, 40vw, 15px);
+}
+
+.footer {
+  width: 100%;
+  min-height: 62px;
+  background-color: var(--bg-footer);
+  margin-top: 14px;
+}
+
+.copywriting {
+  min-height: 62px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.copywriting__text {
+  font-size: 12px;
+}
+
+.copywriting__text-span {
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --main-font: "Inter", sans-serif;
+  --width-container: 1170px;
+  --padding-container: 15px;
+  --page-bg-color: #0d0d0d;
+  --main-color: #ffffff;
+  --accent-color: #8000ff;
+  --border-color: #333333;
+  --section-btn-bg-color: #1d1c1c;
+  --ui-element-default-color: #2c2d2d;
+  --btn-keyboard-color: #ffffff;
+  --hover-btn: 0 7px 0 #483d8b;
+  --active-btn: 0 12px 0 #483d8b;
+  --default-bg-navbar: rgba(22, 22, 22, 0);
+  --active-bg-navbar: rgba(22, 22, 22, 1);
+  --button-theme-color: #2c2d2d;
+  --text-shadow: 4px 14px 90px rgb(128, 0, 255, 1);
+  --display-shadow: 0 7px 0 #483d8b;
+  --bg-dispay-keyboard: #9e01ff;
+  --display-shadow: 0 7px 0 #483d8b;
+  --bg-btn-keyboard: #c58aff;
+  --keyboard-shadow: 4px 14px 90px rgb(128, 0, 255, 1);
+  --btn-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  --keyboard-text: #ffffff;
+  --bg-footer: #161616;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font);
+  font-weight: 400;
+  color: var(--main-color);
+  background-color: var(--page-bg-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: calc(var(--width-container) + var(--padding-container) * 2);
+  margin: 0 auto;
+  padding-inline: var(--padding-container);
+}
+
+@media (max-width: 1131px) {
+  .btns-keyboard__flex-row .btns-keyboard__btn {
+    width: 47%;
+  }
+  .btns-keyboard__minor {
+    order: -1;
+  }
+}
+@media (max-width: 1025px) {
+  .btns-keyboard__btn--shift,
+  .btns-keyboard__btn--backspace,
+  .btns-keyboard__btn--clear,
+  .btns-keyboard__btn--spase {
+    width: 48%;
+  }
+}/*# sourceMappingURL=main.css.map */
